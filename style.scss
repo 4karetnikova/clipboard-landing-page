@@ -1,0 +1,321 @@
+/* font */
+$ff-bai-jamjuree: "Bai Jamjuree";
+$font-weight-bold: 600;
+$font-weight-medium: 400;
+
+/*first-level-headline:*/
+$first-font-size: 25px;
+
+/*seccnd-level-headline:*/
+$second-font-size: 22px;
+
+/*third-level-headline:*/
+$third-font-size: 18px;
+
+/* neutral colors */
+
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$white: hsl(0, 0%, 100%);
+
+/* primary colors */
+
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+
+$margin: 20px;
+$gap: 15px;
+
+/* space between containers */
+$margin-botton: 120px;
+
+$opacity: 0.7;
+/* padding for description and for text wrappers*/
+$padding: 0px 35px;
+
+/*padding for headlines */
+$padding-headline: 0px 60px;
+
+$border-radius-button: 40px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first-image-wrapper {
+  background-image: url("./images/bg-header-mobile.png");
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+}
+
+.body-wrapper {
+  .first-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap;
+    margin: $margin;
+
+    .first-level-headline {
+      font-size: $first-font-size;
+      font-weight: $font-weight-bold;
+      opacity: $opacity;
+      text-align: center;
+      padding: $padding-headline;
+      font-family: $ff-bai-jamjuree;
+    }
+  }
+
+  .description {
+    text-align: center;
+    opacity: 0.4;
+    font-weight: $font-weight-medium;
+    line-height: 24px;
+    margin-bottom: $margin;
+    padding: $padding;
+    font-size: 16px;
+    font-family: $ff-bai-jamjuree;
+  }
+
+  .second-level-headline {
+    font-size: $second-font-size;
+    font-family: $ff-bai-jamjuree;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    opacity: $opacity;
+    padding: $padding-headline;
+    opacity: $opacity;
+  }
+
+  .third-level-headline {
+    font-family: $ff-bai-jamjuree;
+    font-weight: $font-weight-bold;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    opacity: $opacity;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+    margin-bottom: $margin-botton;
+
+    .IOS-button {
+      background-color: $strong-cyan;
+      padding: 12px 80px;
+      border-radius: $border-radius-button;
+      border: none;
+      color: $white;
+      font-weight: $font-weight-medium;
+      border-radius: 25px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+        0px 4px 4px rgba(12, 167, 149, 0.8); /* Cyan-dunkler Rand unten */
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .MAC-button {
+      background-color: $light-blue;
+      padding: 12px 80px;
+      border-radius: $border-radius-button;
+      border: none;
+      color: $white;
+      font-weight: $font-weight-medium;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+        0px 4px 4px hsl(233, 100%, 69%);
+      /* Cyan-dunkler Rand unten */
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .second-outer-wrapper {
+    .second-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $gap;
+      margin: $margin;
+
+      .second-image-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+
+      .snippet-features {
+        margin-bottom: $margin-botton;
+        font-size: $third-font-size;
+
+        .quick-search {
+          display: flex;
+          flex-direction: column;
+          gap: $gap;
+        }
+
+        .iCloud-sync {
+          display: flex;
+          flex-direction: column;
+          gap: $gap;
+        }
+
+        .complete-history {
+          display: flex;
+          flex-direction: column;
+          gap: $gap;
+        }
+      }
+    }
+  }
+
+  .third-outer-wrapper {
+    .third-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $gap;
+      padding: $padding;
+    }
+
+    .third-image-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .third-text-wrapper-two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $gap;
+      margin: 50px 0px;
+      padding: 0px 35px;
+    }
+
+    .third-tools {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: $margin-botton;
+      gap: $gap;
+
+      .create-blacklists-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+      }
+
+      .plain-text-snippets-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+      }
+
+      .sneak-preview-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+      }
+    }
+  }
+
+  .fourth-outer-wrapper {
+    .fourth-icons {
+      margin: $margin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      text-align: center;
+      margin-bottom: $margin-botton;
+    }
+  }
+
+  .fifth-outer-wrapper {
+    .fifth-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin: $margin;
+      margin-bottom: $margin-botton;
+    }
+  }
+}
+
+.footer {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0px;
+
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 80px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: $ff-bai-jamjuree;
+    opacity: 0.6;
+    font-weight: $font-weight-bold;
+
+    ul {
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    opacity: 0.9;
+  }
+}
+
+.IOS-button .MAC-button .img {
+  width: 80%;
+  margin: $margin;
+}
+
+.logo-footer .links ul li .links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap;
+}
